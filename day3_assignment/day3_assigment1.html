@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day-3 First Assignment</title>  
+        <!--
+            name :Nandha P
+            email Id : nandha9318@gmail.com
+        -->     
+    </head>
+    <body>        
+        <p >Types of console method</p>    
+        <!-- Clearing the message from console tab-->    
+        <button onclick="clearConsole()">ClearConsole</button>
+        <!-- Counting he values-->
+        <button onclick="consoleCount()">ClickToCount</button>
+<script>
+        //message to the console, only if the first argument is false
+        console.assert(document.getElementById("check"), "You have no element with ID 'check'");
+
+        function clearConsole() {
+            console.clear();
+        }
+         function consoleCount(){
+            for (i = 0; i < 1; i++) {
+             console.count();
+        }
+    }
+    //show as a error
+    console.error("Exception or error in console by console.error");
+    //Just printing the info
+    console.info("console.info will print the message ");
+    //printing the msg passed
+    console.log("console.log will print the message as given ");
+    //show the objct in table
+    console.table(["Nandha", "JavaScript", "Letsupgrade"]);
+    //Shw the stating time of function and also the complete time of it
+    console.time();
+    for (i = 0; i < 10; i++) {
+    // some code
+    }
+    console.timeEnd();
+    //Console message as warning
+    console.warn("This will display as warning message used console.warn");
+    //Grouping will be grouping he console messsage and groupend will come out of it
+    console.group();
+    console.log("inside group1");
+    console.log("inside group2");
+    console.groupEnd();
+    console.log("We are out of group");
+    </script>  
+    </body>
+</html>
