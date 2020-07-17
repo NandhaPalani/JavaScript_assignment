@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 3</title>
+</head>
+<body>
+   
+    
+   
+    <h3>enter the mark</h3>
+    <input type="number" id="mark">
+    <button onclick="myFunction()">CalculateGrade</button>
+<p id='dooo'></p>
+    <script>
+        function myFunction() {
+          var text;
+          //const x = this.dealer;
+          var x = document.getElementById("mark").value;
+        console.log(x)
+          switch(x) {
+              case  '30':
+              text = "Grade c";
+            break;
+
+              case '50':
+              text = "Grade b";
+            break;
+              case '100':
+             text = "Grade a";
+            break;
+            default:
+            text = "";
+          }
+          document.getElementById("dooo").innerHTML = text;
+          console.log(text);
+        }
+        </script>
+
+</body>
+</html>
